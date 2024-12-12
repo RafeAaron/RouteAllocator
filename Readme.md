@@ -32,7 +32,7 @@ This class is used to allocate routes at runtime based on filters and other metr
 ### Step 1: Downloading the library
 ```bash
 #This line downloads the library in to your working directory
-git clone https://github.com/BamuJ/2D_Mapper.git
+git clone https://github.com/RafeAaron/RouteAllocator.git
 ```
 
 ### Step 2: Importing the library and all it's features
