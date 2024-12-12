@@ -38,22 +38,25 @@ git clone https://github.com/BamuJ/2D_Mapper.git
 ### Step 2: Importing the library and all it's features
 ```java
 //This line imports all our features in to the current file
-import 2D_Mapper.sourceCode.*
+import RouteAllocation.*
 ```
 
 ### Step 3: Using the library
 ```java
-//This creates a new point
-Point point = new Point();
+//This creates a new Location
+Location location = new Location();
 
-//This creates a new route
+//This creates a new locationManager
+LocationManager locationManager = new LocationManager();
+
+//This create a new route
 Route route = new Route();
-
-//This create a new connecting line
-ConnectingLine connectingLine = new ConnectingLine();
 
 //This create a new route manager
 RouteManager routeManager = new RouteManager();
+
+//This creates a new connector
+Connector connector = new Connector();
 ```
 
 ## Authors
@@ -62,7 +65,7 @@ Rubangakene Stuart rafeaaron21@gmail.com
 ## Licence
 Released under MIT License
 
-Copyright (c) 2024 Bamukunda Joanitah.
+Copyright (c) 2024 Rubangakene Stuart.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
