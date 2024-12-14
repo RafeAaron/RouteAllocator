@@ -59,6 +59,37 @@ RouteManager routeManager = new RouteManager();
 Connector connector = new Connector();
 ```
 
+## API Documentation
+### Location
+**getLocationName()** -> Takes in no parameters and returns a string of the location name.
+
+**setLatitude(latitude)** -> Takes in a string and sets the latitude and returns boolean status of the operation.
+
+**setLongitude(longitude)** -> Takes in a string and sets the longitude and returns the boolean status of the operation.
+
+**addNeighbour(neighbourName)** -> Takes in a string of the name of the neighbour and returns a boolean status of the operation.
+
+**searchForNeighbour(neighbourName)** -> Takes in a string of the name of the neighbour and returns a boolean to show the status of the search.
+
+**listNeighbours()** -> Takes in no parameters and returns a String of all the neighbours.
+
+**getLocationCoordinates()** -> Takes in no parameters and returns a String array of two strings with the latitude in the zero index and the longitude in the first index.
+
+**addLocationOfNeighbour(location)** -> Takes in a location instance and adds it to the list of neighbours of that location.
+
+**isLocationANeighbour(locationName)** -> This takes in a name of a location and returns a boolean showing the status of the locations presence.
+
+**getNumberOfNeighbours()** -> This takes in no parameter and returns an int showing the number of neighbours.
+
+**getNeighbourCoordinates(locationName)** -> Takes in a string and returns a String array with the status of the operation in zero index and values in first index.
+
+### Connector
+toString() -> Takes in no parameters and returns a string representation of the connector
+
+getLocationStart() -> Takes in no parameters and returns the starting location of the connector
+
+getLocationEnd() -> Takes in no parameters and returns the ending location of the connector
+
 ## Authors
 Rubangakene Stuart rafeaaron21@gmail.com
 
