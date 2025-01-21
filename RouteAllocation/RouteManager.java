@@ -1,9 +1,10 @@
 package RouteAllocation;
+import RouteAllocation.Route;
 
 //This class will handle route allocations on the go
 public class RouteManager {
 
-    private Route[] routes;
+    public Route[] routes;
     private int routesLength;
     private LocationManager locationManager;
     private boolean locationManagerAbsent;
@@ -131,7 +132,7 @@ public class RouteManager {
     }
 
     public Route searchForRouteByName(String name){
-        Route route = new Route("Null");
+        Route route = new Route("Null", 10);
         
         for(int i = 0; i < this.routesLength; i++){
             if(this.routes[i].getRouteName().compareTo(name) == 0){
