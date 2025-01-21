@@ -6,13 +6,16 @@ public class Route {
     private int sizeOfLocationsOnRoute;
     private Connector[] connections;
     private int sizeOfConnectors;
+    private int trafficScore;
+    private int travelTime;
 
-    public Route(String nameOfRoute){
+    public Route(String nameOfRoute, int trafficScore){
         this.routeName = nameOfRoute;
         this.routeLocations = new Location[1];
         this.sizeOfLocationsOnRoute = 0;
         this.connections = new Connector[1];
         this.sizeOfConnectors = 0;
+        this.trafficScore = trafficScore;
     }
 
     //Checks if the array is full or not
@@ -20,6 +23,25 @@ public class Route {
         if(this.connections.length == this.sizeOfConnectors) return true;
 
         return false;
+    }
+
+    public int getTrafficScore() {
+        return this.trafficScore;
+    }
+
+    // Setter for traffic score
+    public void setTrafficScore(int trafficScore) {
+        this.trafficScore = trafficScore;
+    }
+
+    // Getter for travel time
+    public int getTravelTime() {
+        return this.travelTime;
+    }
+
+    // Setter for travel time
+    public void setTravelTime(int travelTime) {
+        this.travelTime = travelTime;
     }
 
     //Returns the first location in an array of locations
